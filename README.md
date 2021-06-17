@@ -25,3 +25,13 @@ flower-stuff-lab
 
 ![GitHub へ ipynb を保存する](https://user-images.githubusercontent.com/28250432/122406648-f7e8df80-cfbb-11eb-9bf4-3818773a62f0.png)
 
+## Project rules
+
+- 自分の名前のついたフォルダの中に保存するコト。
+- データセットをリポジトリに push しないコト。
+- データセットは自分のマイドライブに保存して、 ipynb で実行するときは一時領域へ移動させて学習をするコト。
+    - 参考: [fine_tuning_with_17flowers.ipynb](https://github.com/yuu-eguci/flower-stuff-lab/blob/main/yuueguci/fine_tuning_with_17flowers.ipynb)
+    - ↓画像参照。
+
+![5](https://user-images.githubusercontent.com/28250432/122409790-629b1a80-cfbe-11eb-8e56-fb712420f37d.png)
+
