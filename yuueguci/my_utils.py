@@ -3,25 +3,34 @@ import numpy
 
 
 def convert_image_for_prediction(image_path: str,
-                                 target_image_size: tuple = (32, 32)) -> numpy.ndarray:
+                                 target_image_size: tuple,
+                                 color_mode: str) -> numpy.ndarray:
     """メチャクチャ苦労して、画像を prediction へ変換する処理を整理しました。
 
     Args:
         image_path (str): 画像パス。
+        target_image_size (tuple): 変換後の画像サイズ。
+        color_mode (str): 'rgb', 'rgba', 'grayscale'
 
     Returns:
         numpy.ndarray: Prediction へ投げられる形式へ変換された画像。
     """
+
+    # 引数チェックを実施します。
+    assert len(target_image_size) == 2, (
+        f'target_image_size には2要素が期待されています。与えられた要素数: {len(target_image_size)}'
+    )
+    assert color_mode in ['rgb', 'rgba', 'grayscale'], (
+        f"color_mode には次の3種類が期待されています。与えられた引数: {['rgb', 'rgba', 'grayscale']}"
+    )
 
     # load_img は画像をファイルから読み込み、PIL 形式で返します。
     # NOTE: だから内部で Pillow を必要としています。
     img = keras.preprocessing.image.load_img(
         image_path,
         # grayscale と color_mode の指定により、読み込んだあとに rgb に変換します。
-        grayscale=False,
-        color_mode='rgb',
-        # 読み込んだあと 32x32 にリサイズします。
-        # NOTE: これは CIFAR10 dataset の画像サイズです。
+        color_mode=color_mode,
+        # 読み込んだあと(たとえば)32x32にリサイズします。
         target_size=target_image_size,
     )
     print(f'load_img の返り値: {type(img)}')  # <class 'PIL.Image.Image'>
