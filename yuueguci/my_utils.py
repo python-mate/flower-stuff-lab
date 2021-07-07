@@ -2,7 +2,8 @@ import keras.preprocessing.image
 import numpy
 
 
-def convert_image_for_prediction(image_path: str) -> numpy.ndarray:
+def convert_image_for_prediction(image_path: str,
+                                 target_image_size: tuple = (32, 32)) -> numpy.ndarray:
     """メチャクチャ苦労して、画像を prediction へ変換する処理を整理しました。
 
     Args:
@@ -21,7 +22,7 @@ def convert_image_for_prediction(image_path: str) -> numpy.ndarray:
         color_mode='rgb',
         # 読み込んだあと 32x32 にリサイズします。
         # NOTE: これは CIFAR10 dataset の画像サイズです。
-        target_size=(32, 32),
+        target_size=target_image_size,
     )
     print(f'load_img の返り値: {type(img)}')  # <class 'PIL.Image.Image'>
     print(f'PIL.Image.Image size: {img.size}')
