@@ -16,10 +16,10 @@ flower-stuff-lab
 
 そのために必要だと思うコト。
 
-- [ ] それが何の花なのか高確率であててくる Python を作るコト。
-- [ ] それを別の環境でも動かす方法を確立するコト。
+- [x] それが何の花なのか高確率であててくる Python を作るコト。
+- [x] それを別の環境でも動かす方法を確立するコト。
     - 「これ clone してねー」「それで `python foo.py flower.jpg` してねー」で完結するようなものがいい。
-- [ ] Anything else?
+- [x] Anything else?
 
 ## How to experiment
 
@@ -51,3 +51,8 @@ flower-stuff-lab
 
 ![5](https://user-images.githubusercontent.com/28250432/122409790-629b1a80-cfbe-11eb-8e56-fb712420f37d.png)
 
+## Organization の repository に保存できないとき
+
+こちら↓に案内画像を用意しました。これに従って、 googlecolab があなたの GitHub アカウントを通じて organization repository にアクセスすることを認可してください。
+
+![googlecolab](https://user-images.githubusercontent.com/28250432/125185101-9e43a000-e25d-11eb-94bb-8746b36549b4.png)
