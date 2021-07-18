@@ -19,7 +19,7 @@ flower-stuff-lab/yuueguci
 | `my_utils_test.ipynb`                                  | これ↑を clone -> import -> 使うテストをします。                                                                                                           |
 | `inception_v3_fine_tuning.ipynb`                       | InceptionV3 モデルをベースとした fine-tuning を行い 17flowers を学習します。結果は hdf5 で保存します。                                                    |
 | `inception_v3_fine_tuning_hyperparameter_tuning.ipynb` | これ↑のハイパーパラメータチューニングをもっと効率的に行うことを目的とした notebook。                                                                      |
-| `GreatPredictor`                                       | hdf5 をダウンロードしてきて prediction をサクリと行う Python script です。                                                                                |
+| `yolov5_easy_detection.ipynb`                          | 「画像からオブジェクトを検出するモデル」を使う notebook。                                                                                                 |
 | `vgg16_fine_tuning.ipynb`                              | 🚧 VGG16 モデルをベースとして fine-tuning を行う予定。                                                                                                     |
 
 ## GreatPredictor の使い方
