@@ -9,7 +9,7 @@ flower-stuff-lab
 
 ## LT document
 
-このプロジェクトは Lightening Talk を見据えて進められました。 LT 資料はこちら(...)。
+このプロジェクトは Lightening Talk を見据えて進められました。 LT 資料は…… @ayano1212 が持っています。
 
 ## Experiment purpose
 
